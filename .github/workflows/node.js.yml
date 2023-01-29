@@ -36,9 +36,9 @@ jobs:
     name: Provision Prod
     runs-on: ubuntu-latest
     needs: build
-    environment:
-      name: .prod
-      url: https://abel-node-gh-accelerator.azurewebsites.net
+    environment: 
+      name: approvalfordeploy.prod
+    
     steps:
     # Checkout
     - name: Checkout
